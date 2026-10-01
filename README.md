@@ -5,6 +5,9 @@
 ```text
 ChatGPT → OpenAI Secure MCP Tunnel → 本机 MCP 适配层 → 官方 lark-cli → 飞书 OpenAPI
 ```
+
+> **在 ChatGPT Chat 中使用，不走 Codex。** 完成连接后，在 ChatGPT 网页版的普通 **Chat** 对话中，从输入框左侧的“+”选择“飞书助手”。这是 ChatGPT 对话内的 MCP 工具调用，不会启动 Codex 任务，也不会消耗独立的 Codex 使用额度。它仍受你的 ChatGPT 订阅、workspace 设置和当时产品用量限制约束；不要将“不扣 Codex 额度”理解为“没有任何限制”。[OpenAI 官方文档](https://developers.openai.com/api/docs/guides/secure-mcp-tunnels)也将 ChatGPT、Codex 和 API 列为可分别使用 Tunnel 的产品表面。
+
 这是一个私有本地集成：`tunnel-client` 只向 OpenAI 发起出站 HTTPS 连接，不需要公网 IP。实际能力取决于飞书应用的权限、用户授权、资源自身权限以及 ChatGPT workspace 的 MCP 能力。
 
 ## 能力与边界
