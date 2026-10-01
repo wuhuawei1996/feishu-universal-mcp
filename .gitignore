@@ -1,0 +1,13 @@
+node_modules/
+.env
+*.log
+.DS_Store
+
+# Tunnel profiles contain a personal Tunnel ID and local paths.
+profiles/*
+!profiles/.gitkeep
+workspace/*
+!workspace/.gitkeep
+
+# Local health/admin endpoints written by tunnel-client.
+*.url

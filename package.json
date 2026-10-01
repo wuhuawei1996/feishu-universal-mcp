@@ -1,0 +1,14 @@
+{
+  "name": "feishu-universal-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A safe MCP adapter for the official Lark/Feishu CLI.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check src/server.mjs && node --test test/*.test.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}
